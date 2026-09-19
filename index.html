@@ -1,52 +1,59 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth pt-(--navHeight) px-2">
+<html
+  lang="en"
+  class="scroll-smooth pt-(--navHeight) overflow-auto scrollbar-none [&::-webkit-scrollbar]:hidden"
+>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/FDL2604P02/assets/favicon-Bs_r76O8.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashikur</title>
-    <script type="module" crossorigin src="/FDL2604P02/assets/index-CoG8oalC.js"></script>
-    <link rel="stylesheet" crossorigin href="/FDL2604P02/assets/index-7ZGgR56P.css">
+    <script type="module" crossorigin src="/FDL2604P02/assets/index-BtGjweps.js"></script>
+    <link rel="stylesheet" crossorigin href="/FDL2604P02/assets/index-DACsqFG1.css">
   </head>
   <body>
     <header>
       <nav
         id="navbar"
-        class="max-w-350 mx-auto px-5 lg:h-(--navHeight) max-lg:h-16 bg-white flex justify-between items-center fixed top-0 left-0 right-0 max-lg:shadow-md z-50"
+        class="lg:h-(--navHeight) max-lg:h-16 bg-white fixed top-0 left-0 right-0 max-lg:shadow-md z-50"
       >
-        <a href="./index.html"
-          ><img
-            class="max-lg:w-32.5"
-            src="/FDL2604P02/assets/ASHIKUR-VLWlfGwr.svg"
-            alt=""
-            width="150px"
-        /></a>
-
-        <ul
-          id="navLinks"
-          class="flex max-lg:flex-col text-base font-medium max-lg:h-dvh transition-transform max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-68 max-lg:shadow-lg max-lg:-translate-x-100 bg-white z-50"
+        <div
+          class="max-w-350 mx-auto px-5 h-full flex justify-between items-center"
         >
-          <li class="brand-logo lg:hidden max-lg:my-10 max-lg:mb-15">
-            <a href="./index.html"
-              ><img src="/FDL2604P02/assets/ASHIKUR-VLWlfGwr.svg" alt="" width="160px"
-            /></a>
-          </li>
-          <li><a href="./index.html" class="underline-fx active">Home</a></li>
-          <li><a href="#" class="underline-fx">About</a></li>
-          <li><a href="#" class="underline-fx">Projects</a></li>
-          <li><a href="#" class="underline-fx">Blogs</a></li>
-          <li><a href="#" class="underline-fx">Contact</a></li>
-        </ul>
+          <a href="./index.html"
+            ><img
+              class="max-lg:w-32.5"
+              src="/FDL2604P02/assets/ASHIKUR-VLWlfGwr.svg"
+              alt=""
+              width="150px"
+          /></a>
 
-        <button id="toggleBtn" class="lg:hidden p-2">
-          <img src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14%205.25V7H0V5.25H14ZM0%2012.25H28V14H0V12.25ZM14%2021V19.25H28V21H14Z'%20fill='black'/%3e%3c/svg%3e" alt="" />
-        </button>
+          <ul
+            id="navLinks"
+            class="flex max-lg:flex-col text-base font-medium max-lg:h-dvh transition-transform max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-68 max-lg:shadow-lg max-lg:-translate-x-100 bg-white z-50 overflow-y-auto"
+          >
+            <li class="brand-logo lg:hidden max-lg:my-10 max-lg:mb-15">
+              <a href="./index.html"
+                ><img src="/FDL2604P02/assets/ASHIKUR-VLWlfGwr.svg" alt="" width="160px"
+              /></a>
+            </li>
+            <li><a href="./index.html" class="underline-fx active">Home</a></li>
+            <li><a href="#" class="underline-fx">About</a></li>
+            <li><a href="#" class="underline-fx">Projects</a></li>
+            <li><a href="#" class="underline-fx">Blogs</a></li>
+            <li><a href="#" class="underline-fx">Contact</a></li>
+          </ul>
+
+          <button id="toggleBtn" class="lg:hidden p-2">
+            <img src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14%205.25V7H0V5.25H14ZM0%2012.25H28V14H0V12.25ZM14%2021V19.25H28V21H14Z'%20fill='black'/%3e%3c/svg%3e" alt="" />
+          </button>
+        </div>
       </nav>
     </header>
     <main>
       <section
-        id="header"
-        class="container relative max-w-350 h-max mx-auto my-3.25 flex flex-wrap items-center justify-between max-[616px]:justify-center"
+        id="header-sect"
+        class="relative max-w-350 h-max mx-auto my-3.25 flex flex-wrap items-center justify-between max-[616px]:justify-center px-2"
       >
         <div
           class="header-text font-[Poppins] text-(--primary-color) max-[616px]:w-full max-[663px]:w-[50%]"
@@ -81,7 +88,7 @@
           >
             <a
               href="#contact"
-              class="inline-block bg-(--yellow) text-white rounded-lg duration-200 hover:bg-(--dark-yellow) px-7 py-2.75 max-[835px]:px-5 max-[835px]:py-2.75 mr-7.75 max-[835px]:mr-3"
+              class="inline-block bg-(--yellow) text-white rounded-lg duration-200 hover:bg-(--dark-yellow) px-7 py-3 max-[835px]:px-5 max-[835px]:py-2.75 mr-7.75 max-[835px]:mr-3"
               ><span class="mr-0.5">Lets Talk</span>
               <i
                 class="fa-regular fa-paper-plane [-webkit-text-stroke:0.25px_var(--yellow)]"
@@ -161,7 +168,7 @@
             UI Designer
           </div>
           <div
-            class="max-lg:hidden bg-white shadow-(--shadow) py-3.25 px-5 rounded-lg text-center text-(--paragraph-color) text-[14px] absolute xl:top-12 -right-5 flex items-center gap-2.25"
+            class="max-lg:hidden bg-white shadow-(--shadow) py-3.25 px-5 rounded-lg text-center text-(--paragraph-color) text-[14px] absolute xl:top-12 flex items-center gap-2.25"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -222,6 +229,57 @@
               ><i class="fa-brands fa-github"></i
             ></a>
           </span>
+        </div>
+      </section>
+      <section
+        id="about-us"
+        class="max-w-full min-w-75 bg-[linear-gradient(95.13deg,#ffcc00_-21.32%,#faffcb_111.64%)] max-sm:bg-[linear-gradient(95.13deg,#fc0_-18.53%,#fff5cb_101.98%)] max-lg:mt-18 lg:mt-37.75"
+      >
+        <div
+          class="relative max-w-350 mx-auto h-max flex items-center justify-evenly flex-wrap max-[679px]:pt-8.25"
+        >
+          <div class="profile-image min-w-75 max-[679px]:hidden">
+            <img
+              src="/FDL2604P02/assets/profile-image-DMsIMe4j.png"
+              alt=""
+              class="h-full max-[835px]:max-w-75 max-[1200px]:max-w-100"
+            />
+          </div>
+          <div class="profile-text text-(--primary-color) px-2">
+            <h2
+              class="capitalize font-bold font-['PT_Sans'] text-[50px] max-[1200px]:text-[34px] max-[835px]:text-[24px]"
+            >
+              About Me
+            </h2>
+            <p
+              class="text-[20px] min-[1200px]:leading-[190%] leading-[165%] mt-6.5 mb-11.25 max-[835px]:my-7 max-[1200px]:text-[17px] max-[835px]:text-[15px] max-[679px]:font-medium"
+            >
+              With 10 years experience as a professional Web
+              <br class="max-[679px]:hidden" />
+              developer, I have acquired the skills and knowledge
+              <br class="max-[679px]:hidden" />
+              necessary to make your project a success. I enjoy every
+              <br class="max-[679px]:hidden" />
+              step of the design process, from discussion and
+              <br class="max-[679px]:hidden" />
+              collaboration.
+            </p>
+            <a
+              href="#"
+              class="capitalize inline-block min-[1200px]:leading-[180%] font-medium min-[1200px]:text-[18px] border rounded-xl duration-200 hover:bg-[rgba(0,0,0,0.05)] px-8 py-2.5 max-[835px]:text-[14px]"
+              >See More
+            </a>
+            <span
+              class="absolute bottom-0 right-0 inline-block w-50 h-25 rounded-t-full bg-[linear-gradient(180deg,#52ab70_0%,rgba(82,171,112,0.48)_100%)] max-[835px]:hidden"
+            ></span>
+          </div>
+          <div class="profile-image min-w-75 min-[679px]:hidden">
+            <img
+              src="/FDL2604P02/assets/profile-image-DMsIMe4j.png"
+              alt=""
+              class="h-full max-w-75 -scale-x-100"
+            />
+          </div>
         </div>
       </section>
     </main>
