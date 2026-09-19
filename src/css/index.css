@@ -16,7 +16,7 @@
     --yellow: #ffcc00;
     --dark-yellow: rgb(225, 204, 0);
 
-    --shadow: rgba(99, 99, 99, 0.15) 0px 2px 8px 0px;
+    --shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
   }
 
   /* left-to-right underline effect */
