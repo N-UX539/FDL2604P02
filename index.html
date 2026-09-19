@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth pt-(--navHeight)">
+<html
+  lang="en"
+  class="scroll-smooth pt-(--navHeight) overflow-auto scrollbar-none [&::-webkit-scrollbar]:hidden"
+>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
@@ -11,31 +14,223 @@
     <header>
       <nav
         id="navbar"
-        class="max-w-350 mx-auto px-5 h-(--navHeight) bg-white flex justify-between items-center fixed top-0 left-0 right-0"
+        class="lg:h-(--navHeight) max-lg:h-16 bg-white fixed top-0 left-0 right-0 max-lg:shadow-md z-50"
       >
-        <a href="/index.html"
-          ><img src="/public/images/ASHIKUR.svg" alt="" width="150px"
-        /></a>
-
-        <ul
-          id="navLinks"
-          class="flex max-lg:flex-col text-base font-medium max-lg:h-dvh transition-transform max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-68 max-lg:shadow-lg max-lg:-translate-x-100"
+        <div
+          class="max-w-350 mx-auto px-5 h-full flex justify-between items-center"
         >
-          <li class="brand-logo lg:hidden max-lg:my-15 max-lg:mb-25">
-            <img src="/public/images/ASHIKUR.svg" alt="" width="170px" />
-          </li>
-          <li><a href="/index.html" class="underline-fx active">Home</a></li>
-          <li><a href="#" class="underline-fx">About</a></li>
-          <li><a href="#" class="underline-fx">Projects</a></li>
-          <li><a href="#" class="underline-fx">Blogs</a></li>
-          <li><a href="#" class="underline-fx">Contact</a></li>
-        </ul>
+          <a href="./index.html"
+            ><img
+              class="max-lg:w-32.5"
+              src="/public/images/ASHIKUR.svg"
+              alt=""
+              width="150px"
+          /></a>
 
-        <button id="toggleBtn" class="lg:hidden p-2">
-          <img src="/src/assets/navIcon.svg" alt="" />
-        </button>
+          <ul
+            id="navLinks"
+            class="flex max-lg:flex-col text-base font-medium max-lg:h-dvh transition-transform max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-68 max-lg:shadow-lg max-lg:-translate-x-100 bg-white z-50 overflow-y-auto"
+          >
+            <li class="brand-logo lg:hidden max-lg:my-10 max-lg:mb-15">
+              <a href="./index.html"
+                ><img src="/public/images/ASHIKUR.svg" alt="" width="160px"
+              /></a>
+            </li>
+            <li><a href="./index.html" class="underline-fx active">Home</a></li>
+            <li><a href="#" class="underline-fx">About</a></li>
+            <li><a href="#" class="underline-fx">Projects</a></li>
+            <li><a href="#" class="underline-fx">Blogs</a></li>
+            <li><a href="#" class="underline-fx">Contact</a></li>
+          </ul>
+
+          <button id="toggleBtn" class="lg:hidden p-2">
+            <img src="/src/assets/navIcon.svg" alt="" />
+          </button>
+        </div>
       </nav>
     </header>
+    <main>
+      <section
+        id="header-sect"
+        class="relative max-w-350 h-max mx-auto my-3.25 flex flex-wrap items-center justify-between max-[616px]:justify-center px-2"
+      >
+        <div
+          class="header-text font-[Poppins] text-(--primary-color) max-[616px]:w-full max-[663px]:w-[50%]"
+        >
+          <strong class="font-medium text-[24px] max-[835px]:text-[15px]"
+            >Hello, I'm Arif Rahman</strong
+          >
+          <h1
+            class="font-bold text-[64px] mt-2 mb-4 max-[1200px]:text-[45px] max-[835px]:text-[34px] max-[835px]:font-[PT_Sans]"
+          >
+            UIUX and Graphic <br />
+            Designer
+          </h1>
+          <p
+            class="font-normal text-[20px] leading-[190%] max-[835px]:text-[15px]"
+          >
+            <span class="max-sm:hidden">
+              With 10 years experience as a Professional
+              <br class="max-[663px]:hidden" />
+              Web developer.
+            </span>
+            <span class="sm:hidden"
+              >I'm creative designer based in New York, and
+              <br class="max-sm:hidden" />
+              I'm very passionate and dedicated to my
+              <br class="max-sm:hidden" />
+              work.</span
+            >
+          </p>
+          <div
+            class="font-semibold w-max min-[1200px]:text-[20px] max-[835px]:text-[14px] my-10 max-lg:my-7"
+          >
+            <a
+              href="#contact"
+              class="inline-block bg-(--yellow) text-white rounded-lg duration-200 hover:bg-(--dark-yellow) px-7 py-3 max-[835px]:px-5 max-[835px]:py-2.75 mr-7.75 max-[835px]:mr-3"
+              ><span class="mr-0.5">Lets Talk</span>
+              <i
+                class="fa-regular fa-paper-plane [-webkit-text-stroke:0.25px_var(--yellow)]"
+              ></i
+            ></a>
+            <a
+              href="#"
+              class="inline-block border rounded-lg duration-200 hover:bg-[#f8f8f8] px-5.75 py-2.75 max-[835px]:px-3.75 max-[835px]:py-2.75"
+              ><span class="mr-0.5">Download CV</span>
+              <i class="fa-solid fa-download"></i>
+            </a>
+          </div>
+          <div
+            class="social-links min-[835px]:text-[22px] font-semibold flex items-center gap-7 max-[616px]:hidden text-nowrap"
+          >
+            <span>Follow me :</span>
+            <span class="flex gap-2.75 min-[835px]:text-[18px] text-[14px]">
+              <a
+                class="bg-[rgba(0,0,0,0.1)] p-1.5 px-2.25 rounded-full"
+                href="http://dribbble.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-dribbble"></i
+              ></a>
+              <a
+                class="bg-[rgba(0,0,0,0.1)] p-1.5 px-2.25 rounded-full"
+                href="http://behance.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+              <a
+                class="bg-[rgba(0,0,0,0.1)] p-1.5 px-2.25 rounded-full"
+                href="http://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                class="bg-[rgba(0,0,0,0.1)] p-1.5 px-2.25 rounded-full"
+                href="http://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="max-lg:hidden absolute bottom-0 right-[50%] translate-[50%] translate-y-full"
+        >
+          <img src="/src/assets/bi_mouse.svg" alt="" />
+        </div>
+        <div class="header-image relative flex justify-end font-[Poppins]">
+          <img
+            src="/public/images/banner-image.png"
+            alt=""
+            class="h-full max-[835px]:max-w-75 drop-shadow-2xl max-[1200px]:max-w-100"
+          />
+          <div
+            class="max-lg:hidden bg-white text-center font-medium absolute bottom-0 left-0 translate-x-[-50%] flex justify-center flex-col items-center p-5 rounded-xl shadow-lg max-[1200px]:scale-85 max-[1200px]:-left-4 max-[1200px]:-bottom-4"
+          >
+            <img src="/public/images/user-avatar.png" alt="" class="h-full" />
+            <h6 class="text-[14px]">Ashikur Hoque</h6>
+            <p class="text-[10px] text-(--paragraph-color)">Senior Design</p>
+            <span class="text-[14px]">250+</span>
+            <p class="text-[10px] leading-[180%] text-(--paragraph-color)">
+              Project Completed
+            </p>
+          </div>
+          <div
+            class="max-lg:hidden bg-white shadow-(--shadow) py-3.25 px-7 rounded-lg text-center text-(--paragraph-color) text-[14px] absolute top-36 xl:-left-24 -left-15 flex items-center gap-2.25"
+          >
+            <div
+              class="rounded-full bg-linear-to-b from-[#ff8d3a] to-[#f16500] w-4 h-4"
+            ></div>
+            UI Designer
+          </div>
+          <div
+            class="max-lg:hidden bg-white shadow-(--shadow) py-3.25 px-5 rounded-lg text-center text-(--paragraph-color) text-[14px] absolute xl:top-12 flex items-center gap-2.25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.35em"
+              height="1.35em"
+              viewBox="0 0 32 32"
+            >
+              <path d="M0 0h32v32H0z" fill="none" />
+              <g fill="none">
+                <path
+                  fill="#00a6ed"
+                  d="M3 13c0 5.523 4.477 10 10 10s10-4.477 10-10S18.523 3 13 3S3 7.477 3 13"
+                />
+                <path
+                  fill="#fff"
+                  d="M18.348 7.732c.552.957.419 2.068-.299 2.482c-.717.414-1.747-.025-2.299-.982s-.418-2.068.299-2.482c.718-.414 1.747.025 2.3.982"
+                />
+                <path
+                  fill="#533566"
+                  d="M2 13c0 6.075 4.925 11 11 11c2.295 0 4.426-.703 6.19-1.905a3.75 3.75 0 0 0 1.005 3.483l3.182 3.182a3.75 3.75 0 0 0 5.303-5.303l-3.182-3.182a3.75 3.75 0 0 0-3.454-1.012A10.95 10.95 0 0 0 24 13c0-6.075-4.925-11-11-11S2 6.925 2 13m20 0a9 9 0 1 1-18 0a9 9 0 0 1 18 0"
+                />
+              </g>
+            </svg>
+            User Research
+          </div>
+        </div>
+        <div
+          class="social-links font-semibold flex items-center gap-7 mt-7 min-[616px]:hidden w-full justify-center"
+        >
+          <span>Follow me :</span>
+          <span class="flex gap-2.75 text-[16px]">
+            <a
+              class="bg-[rgba(0,0,0,0.1)] p-1.25 px-2 rounded-full"
+              href="http://dribbble.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-dribbble"></i
+            ></a>
+            <a
+              class="bg-[rgba(0,0,0,0.1)] p-1.25 px-2 rounded-full"
+              href="http://behance.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-behance"></i
+            ></a>
+            <a
+              class="bg-[rgba(0,0,0,0.1)] p-1.25 px-2 rounded-full"
+              href="http://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              class="bg-[rgba(0,0,0,0.1)] p-1.25 px-2 rounded-full"
+              href="http://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </span>
+        </div>
+      </section>
+    </main>
 
     <script type="module" src="/src/scripts/main.js"></script>
   </body>

@@ -1,9 +1,22 @@
 @import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.css";
 
 @layer utilities {
   :root {
     /* Adjust navbar height dynamically on scroll */
     --navHeight: 5rem;
+
+    /* Font Family */
+    --font-family: "Poppins", sans-serif;
+    --pt-sans: "PT Sans", sans-serif;
+
+    /* root colours */
+    --primary-color: #353535;
+    --paragraph-color: #7a7a7a;
+    --yellow: #ffcc00;
+    --dark-yellow: rgb(225, 204, 0);
+
+    --shadow: rgba(99, 99, 99, 0.15) 0px 2px 8px 0px;
   }
 
   /* left-to-right underline effect */
@@ -13,11 +26,18 @@
     transition: background-size 0.25s ease-in-out;
   }
 
+  /*  */
+  .fa-thin-look {
+    -webkit-text-stroke: 0.1px var(--yellow);
+    stroke: currentColor;
+    stroke-width: 10px;
+  }
+
   /* Target the main navigation wrapper */
   #navLinks {
     text-transform: uppercase;
     gap: 1.75rem;
-    color: #404040;
+    color: var(--primary-color);
     font-family: "Poppins", sans-serif;
     transition-duration: 400ms;
     align-items: center;
