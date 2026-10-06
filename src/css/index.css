@@ -53,6 +53,22 @@
     padding-inline: 0.75rem;
   }
 
+  /* Certificate Tab Panel */
+  progress-bar-fill {
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tab-panel {
+    opacity: 0;
+    transform: translateY(4px);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+  .tab-panel.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   /* Desktop View (lg breakpoint: 1024px and up) */
   @media (min-width: 64rem) {
     .underline-fx:hover,
