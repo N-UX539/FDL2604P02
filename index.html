@@ -80,7 +80,7 @@
           >
             <a
               href="#contact"
-              class="inline-block bg-(--yellow) text-white rounded-lg duration-200 hover:bg-(--dark-yellow) px-7 py-3 max-[835px]:px-5 max-[835px]:py-2.75 mr-7.75 max-[835px]:mr-3 border border-(--yellow)"
+              class="inline-block bg-(--yellow) text-white rounded-xl duration-200 hover:bg-(--dark-yellow) px-7 py-3 max-[835px]:px-5 max-[835px]:py-2.75 mr-7.75 max-[835px]:mr-3 border border-(--yellow)"
               ><span class="mr-0.5">Lets Talk</span>
               <i
                 class="fa-regular fa-paper-plane [-webkit-text-stroke:0.25px_var(--yellow)]"
@@ -88,7 +88,7 @@
             ></a>
             <a
               href="#"
-              class="inline-block border rounded-lg duration-200 hover:bg-[#f8f8f8] px-5.75 py-3 max-[835px]:px-3.75 max-[835px]:py-2.75"
+              class="inline-block border rounded-xl duration-200 hover:bg-[#f8f8f8] px-5.75 py-3 max-[835px]:px-3.75 max-[835px]:py-2.75"
               ><span class="mr-0.5">Download CV</span>
               <i class="fa-solid fa-download"></i>
             </a>
@@ -648,7 +648,7 @@
 
       <section
         id="Certificate"
-        class="certificate max-w-350 mx-auto px-2 mt-[clamp(80px,5vw,290px)] flex flex-wrap justify-between"
+        class="certificate max-w-350 mx-auto px-2 mt-[clamp(80px,10vw,290px)] flex flex-wrap items-center justify-between"
       >
         <div class="lg:max-w-[50%] max-lg:w-full w-full">
           <h2
@@ -657,7 +657,7 @@
             My Expert Areas
           </h2>
           <p
-            class="flex flex-col gap-3.5 font-['Poppins'] font-normal text-[clamp(15px,1.5vw,20px)] text-(--paragraph-color) leading-[200%] mt-[clamp(20px,4vw,40px)] mb-[clamp(15px,4vw,30px)]"
+            class="flex flex-col gap-3.5 font-['Poppins'] font-normal text-[clamp(15px,1.5vw,20px)] text-(--paragraph-color) leading-[200%] mt-[clamp(15px,4vw,40px)] mb-[clamp(40px,4vw,30px)]"
           >
             <span>
               You can express yourself however you want and whenever you want,
@@ -678,12 +678,12 @@
           </a>
         </div>
 
-        <div class="w-full lg:max-w-125 bg-white rounded-3xl p-6 sm:p-8">
+        <div class="w-full lg:max-w-125 bg-white rounded-3xl">
           <!-- Tab Navigation Bar -->
           <nav
             role="tablist"
             aria-label="Profile Sections"
-            class="flex items-center justify-center gap-3 sm:gap-6 mb-8 select-none"
+            class="flex items-center justify-start gap-3 sm:gap-6 mb-8 select-none"
           >
             <!-- Tab 1: Skills -->
             <button
@@ -718,10 +718,10 @@
               id="panel-skills"
               role="tabpanel"
               aria-labelledby="tab-skills"
-              class="tab-panel active space-y-11"
+              class="tab-panel active space-y-[clamp(34px,3vw,44px)]"
             >
               <!-- Skill Item: Figma -->
-              <div class="space-y-2">
+              <div class="space-y-2 progress-item">
                 <div
                   class="flex justify-between items-center text-sm sm:text-base"
                 >
@@ -729,21 +729,22 @@
                     class="font-semibold text-[clamp(14px,2vw,18px)] leading-[180%]"
                     >Figma</span
                   >
-                  <span class="font-semibold text-[#f97316]">85%</span>
+                  <!-- Developer note: Simply edit percentage text here -->
+                  <span class="percent-val font-semibold text-[#f97316]"
+                    >85%</span
+                  >
                 </div>
                 <div
                   class="h-2 w-full bg-slate-200/80 rounded-full overflow-hidden"
                 >
                   <div
                     class="progress-bar-fill h-full bg-[#f97316] rounded-full"
-                    data-percentage="85%"
-                    style="width: 0%"
                   ></div>
                 </div>
               </div>
 
               <!-- Skill Item: Photoshop -->
-              <div class="space-y-2">
+              <div class="space-y-2 progress-item">
                 <div
                   class="flex justify-between items-center text-sm sm:text-base"
                 >
@@ -751,21 +752,22 @@
                     class="font-semibold text-[clamp(14px,2vw,18px)] leading-[180%]"
                     >Photoshop</span
                   >
-                  <span class="font-semibold text-[#1d4ed8]">75%</span>
+                  <!-- Developer note: Simply edit percentage text here -->
+                  <span class="percent-val font-semibold text-[#1d4ed8]"
+                    >75%</span
+                  >
                 </div>
                 <div
                   class="h-2 w-full bg-slate-200/80 rounded-full overflow-hidden"
                 >
                   <div
                     class="progress-bar-fill h-full bg-[#1d4ed8] rounded-full"
-                    data-percentage="75%"
-                    style="width: 0%"
                   ></div>
                 </div>
               </div>
 
               <!-- Skill Item: XD -->
-              <div class="space-y-2">
+              <div class="space-y-2 progress-item">
                 <div
                   class="flex justify-between items-center text-sm sm:text-base"
                 >
@@ -773,21 +775,22 @@
                     class="font-semibold text-[clamp(14px,2vw,18px)] leading-[180%]"
                     >XD</span
                   >
-                  <span class="font-semibold text-[#800080]">80%</span>
+                  <!-- Developer note: Simply edit percentage text here -->
+                  <span class="percent-val font-semibold text-[#800080]"
+                    >80%</span
+                  >
                 </div>
                 <div
                   class="h-2 w-full bg-slate-200/80 rounded-full overflow-hidden"
                 >
                   <div
                     class="progress-bar-fill h-full bg-[#800080] rounded-full"
-                    data-percentage="80%"
-                    style="width: 0%"
                   ></div>
                 </div>
               </div>
 
               <!-- Skill Item: Illustrator -->
-              <div class="space-y-2">
+              <div class="space-y-2 progress-item">
                 <div
                   class="flex justify-between items-center text-sm sm:text-base"
                 >
@@ -795,15 +798,16 @@
                     class="font-semibold text-[clamp(14px,2vw,18px)] leading-[180%]"
                     >Illustrator</span
                   >
-                  <span class="font-semibold text-[#2563eb]">70%</span>
+                  <!-- Developer note: Simply edit percentage text here -->
+                  <span class="percent-val font-semibold text-[#2563eb]"
+                    >70%</span
+                  >
                 </div>
                 <div
                   class="h-2 w-full bg-slate-200/80 rounded-full overflow-hidden"
                 >
                   <div
                     class="progress-bar-fill h-full bg-[#2563eb] rounded-full"
-                    data-percentage="70%"
-                    style="width: 0%"
                   ></div>
                 </div>
               </div>
@@ -817,7 +821,7 @@
               class="tab-panel hidden space-y-6"
             >
               <!-- Education Item 1: Master Degree -->
-              <div class="space-y-2">
+              <div class="space-y-2 progress-item">
                 <div
                   class="flex justify-between items-center text-sm sm:text-base"
                 >
@@ -830,21 +834,22 @@
                       >Tech University • 2021 - 2023</span
                     >
                   </div>
-                  <span class="font-semibold text-[#f97316]">100%</span>
+                  <!-- Developer note: Simply edit percentage text here -->
+                  <span class="percent-val font-semibold text-[#f97316]"
+                    >100%</span
+                  >
                 </div>
                 <div
                   class="h-2 w-full bg-slate-200/80 rounded-full overflow-hidden"
                 >
                   <div
                     class="progress-bar-fill h-full bg-[#f97316] rounded-full"
-                    data-percentage="100%"
-                    style="width: 0%"
                   ></div>
                 </div>
               </div>
 
               <!-- Education Item 2: Bachelor Degree -->
-              <div class="space-y-2">
+              <div class="space-y-2 progress-item">
                 <div
                   class="flex justify-between items-center text-sm sm:text-base"
                 >
@@ -857,21 +862,22 @@
                       >State University • 2017 - 2021</span
                     >
                   </div>
-                  <span class="font-semibold text-[#1d4ed8]">100%</span>
+                  <!-- Developer note: Simply edit percentage text here -->
+                  <span class="percent-val font-semibold text-[#1d4ed8]"
+                    >100%</span
+                  >
                 </div>
                 <div
                   class="h-2 w-full bg-slate-200/80 rounded-full overflow-hidden"
                 >
                   <div
                     class="progress-bar-fill h-full bg-[#1d4ed8] rounded-full"
-                    data-percentage="100%"
-                    style="width: 0%"
                   ></div>
                 </div>
               </div>
 
               <!-- Education Item 3: Professional Certification -->
-              <div class="space-y-2">
+              <div class="space-y-2 progress-item">
                 <div
                   class="flex justify-between items-center text-sm sm:text-base"
                 >
@@ -884,21 +890,21 @@
                       >Coursera • 2022</span
                     >
                   </div>
-                  <span class="font-semibold text-[#800080]">95%</span>
+                  <span class="percent-val font-semibold text-[#800080]"
+                    >95%</span
+                  >
                 </div>
                 <div
                   class="h-2 w-full bg-slate-200/80 rounded-full overflow-hidden"
                 >
                   <div
                     class="progress-bar-fill h-full bg-[#800080] rounded-full"
-                    data-percentage="95%"
-                    style="width: 0%"
                   ></div>
                 </div>
               </div>
 
               <!-- Education Item 4: Frontend Specialization -->
-              <div class="space-y-2">
+              <div class="space-y-2 progress-item">
                 <div
                   class="flex justify-between items-center text-sm sm:text-base"
                 >
@@ -911,19 +917,127 @@
                       >Design Academy • 2020</span
                     >
                   </div>
-                  <span class="font-semibold text-[#2563eb]">90%</span>
+                  <!-- Developer note: Simply edit percentage text here -->
+                  <span class="percent-val font-semibold text-[#2563eb]"
+                    >90%</span
+                  >
                 </div>
                 <div
                   class="h-2 w-full bg-slate-200/80 rounded-full overflow-hidden"
                 >
                   <div
                     class="progress-bar-fill h-full bg-[#2563eb] rounded-full"
-                    data-percentage="90%"
-                    style="width: 0%"
                   ></div>
                 </div>
               </div>
             </section>
+          </div>
+        </div>
+      </section>
+      <section
+        id="Service"
+        class="service max-w-full px-2 bg-[#FFF7D5] py-[clamp(35px,3vw,70px)] mt-[clamp(100px,4vw,150px)]"
+      >
+        <div
+          class="xl:container mx-auto font-['Poppins'] space-y-[clamp(45px,4vw,75px)]"
+        >
+          <div class="space-y-[clamp(10px,1vw,13px)] sm:text-center">
+            <h2
+              class="font-['PT_Sans'] capitalize font-bold text-[clamp(24px,4vw,50px)] text-(--primary-color)"
+            >
+              My Services
+            </h2>
+            <p
+              class="font-normal text-[clamp(13px,1.5vw,18px)] leading-[180%] text-(--paragraph-color) max-w-150 sm:mx-auto"
+            >
+              Most common methods for designing websites that work well on
+              desktop is responsive and adaptive design
+            </p>
+          </div>
+          <div
+            class="service-card flex flex-wrap max-md:flex-col items-end justify-center gap-[clamp(10px,1.5vw,20px)] md:text-center"
+          >
+            <div
+              class="lg:w-[33%] md:max-w-87.5 max-md:w-full md:h-[clamp(372px,40vw,422px)] sm:h-50 pt-[clamp(24px,2.5vw,34px)] pb-[clamp(24px,2vw,80px)] shadow-[0_4px_10px_0_rgba(0,0,0,0.06)] bg-white rounded-xl flex md:flex-col justify-center sm:items-center gap-[clamp(15px,3vw,20px)] px-[clamp(20px,3vw,50px)]"
+            >
+              <div class="service-card-img max-w-[clamp(54px,7vw,88px)] w-full">
+                <img
+                  src="./public/images/ServiceImg01.png"
+                  alt=""
+                  class="max-w-full h-auto"
+                />
+              </div>
+              <div
+                class="service-card-text leading-[180%] space-y-[clamp(10px,2vw,25px)]"
+              >
+                <h3
+                  class="capitalize font-semibold text-[clamp(15px,3vw,24px)] text-(--primary-color)"
+                >
+                  Creative Design
+                </h3>
+                <p
+                  class="font-normal text-[clamp(13px,1.5vw,15px)] text-(--paragraph-color)"
+                >
+                  Web design refers to the design of websites that are displayed
+                  on the internet. It usually refers to the user experience
+                  aspects of website development
+                </p>
+              </div>
+            </div>
+            <div
+              class="lg:w-[33%] min-[1120px]:max-w-93 md:max-w-87.5 max-md:w-full max-[1120px]:md:h-[clamp(372px,40vw,422px)] md:h-112 sm:h-50 pt-[clamp(24px,2.5vw,34px)] pb-[clamp(24px,2vw,80px)] shadow-[0_4px_10px_0_rgba(0,0,0,0.06)] bg-linear-[158.91deg,#fc0_3.12%,#ffe476_94.59%] rounded-xl flex md:flex-col justify-center sm:items-center gap-[clamp(15px,3vw,20px)] px-[clamp(20px,3vw,50px)]"
+            >
+              <div
+                class="service-card-img max-w-[clamp(54px,7vw,100px)] w-full"
+              >
+                <img
+                  src="./public/images/ServiceImg02.png"
+                  alt=""
+                  class="max-w-full h-auto"
+                />
+              </div>
+              <div
+                class="service-card-text leading-[180%] space-y-[clamp(10px,2vw,25px)] text-white"
+              >
+                <h3
+                  class="capitalize font-semibold text-[clamp(15px,3vw,24px)]"
+                >
+                  UI/UX Design
+                </h3>
+                <p class="font-normal text-[clamp(13px,1.5vw,15px)]">
+                  Web design refers to the design of websites that are displayed
+                  on the internet. It usually refers to the user experience
+                  aspects of website development
+                </p>
+              </div>
+            </div>
+            <div
+              class="lg:w-[33%] md:max-w-87.5 max-md:w-full md:h-[clamp(372px,40vw,422px)] sm:h-50 pt-[clamp(24px,2.5vw,34px)] pb-[clamp(24px,2vw,80px)] shadow-[0_4px_10px_0_rgba(0,0,0,0.06)] bg-white rounded-xl flex md:flex-col justify-center sm:items-center gap-[clamp(15px,3vw,20px)] px-[clamp(20px,3vw,50px)]"
+            >
+              <div class="service-card-img max-w-[clamp(54px,7vw,88px)] w-full">
+                <img
+                  src="./public/images/ServiceImg03.png"
+                  alt=""
+                  class="max-w-full h-auto"
+                />
+              </div>
+              <div
+                class="service-card-text leading-[180%] space-y-[clamp(10px,2vw,25px)]"
+              >
+                <h3
+                  class="capitalize font-semibold text-[clamp(15px,3vw,24px)] text-(--primary-color)"
+                >
+                  Web Design
+                </h3>
+                <p
+                  class="font-normal text-[clamp(13px,1.5vw,15px)] text-(--paragraph-color)"
+                >
+                  Web design refers to the design of websites that are displayed
+                  on the internet. It usually refers to the user experience
+                  aspects of website development
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
