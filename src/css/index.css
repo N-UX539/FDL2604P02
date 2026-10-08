@@ -28,7 +28,7 @@
 
   /*  */
   .fa-thin-look {
-    -webkit-text-stroke: 0.5px var(--yellow);
+    -webkit-text-stroke: 0.5px white;
     stroke: currentColor;
     stroke-width: 10px;
   }
@@ -68,22 +68,33 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
 
-  /* Desktop View (lg breakpoint: 1024px and up) */
-  @media (min-width: 64rem) {
-    .underline-fx:hover,
-    .underline-fx.active {
-      background-size: 100% 2px;
-    }
+/* Desktop View (lg breakpoint: 1024px and up) */
+@media (min-width: 64rem) {
+  .underline-fx:hover,
+  .underline-fx.active {
+    background-size: 100% 2px;
   }
-  @media (max-width: 64rem) {
-    #navLinks {
-      gap: 0.625rem;
-      background-color: #ffffff;
-    }
-    #navLinks li:not(.brand-logo) {
-      padding-block: 0.625rem;
-      width: 100%;
-    }
+}
+@media (max-width: 64rem) {
+  #navLinks {
+    gap: 0.625rem;
+    background-color: #ffffff;
+  }
+  #navLinks li:not(.brand-logo) {
+    padding-block: 0.625rem;
+    width: 100%;
+  }
+}
+@media (min-width: 35rem) and (max-width: 47.9375rem) {
+  .blog > div {
+    gap: 0;
+  }
+  .blog-card:nth-child(2n + 1) {
+    justify-content: start;
+  }
+  .blog-card:nth-child(2n) {
+    justify-content: end;
   }
 }
